@@ -1,0 +1,7 @@
+repo-link:  https://github.com/programming-hero-web-course2/b7a6-ai-universe-assignment-Imran-A-K
+
+
+repo-link: https://github.com/programming-hero-web-course2/b7a6-ai-universe-assignment-Imran-A-K
+
+live site: https://magenta-ai-hub-db7ef5.netlify.app/
+

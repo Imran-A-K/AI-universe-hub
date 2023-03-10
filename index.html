@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Universe Hub</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+      @media only screen and (max-width: 576px) {
+  .pricing-width{
+    width: 90% !important;
+  }
+  .close-button{
+    transform: translate(-50%,10%) !important;
+    top: 20% !important;
+    left: 50% !important;
+  }
+  .space-down{
+    margin-bottom: 15px;
+  }
+
+}
+    </style>
+  </head>
+  <body>
+    <!-- section containing Title and sort by date button  -->
+<section class="text-center fs-1 fw-bolder my-5 container-fluid">
+    <h1 class="space-down">AI Universe Hub</h1>
+    <button id="sortByDateButton" type="button" class="btn btn-danger fs-5 fw-bold lh-lg">Sort By Date</button>
+</section>
+<!-- spinner -->
+<section id="spinner" class="d-none">
+  <div style="height: 300px;" class="d-flex justify-content-center align-items-center ">
+    <div class="spinner-border text-danger" style="width: 3rem; height: 3rem;" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</section>
+<main>
+    <section class="container">
+        <div id="card-container" class="row row-cols-1 row-cols-md-3 g-4">
+            
+            
+          </div>
+    </section>
+    <!-- Button Section -->
+    <section class="container-fluid my-5 text-center">
+        <button id="showAllButton" type="button" class="btn btn-danger fs-5 fw-bold lh-lg">See more</button>
+        <button id="showAllButton-byDate" type="button" class="btn btn-danger fs-5 fw-bold lh-lg d-none">See more</button>
+    </section>
+    <!-- Modal Section -->
+    <section id="modal-container">
+      
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class=" position-relative">
+       
+        <button type="button" class=" position-absolute  top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2 close-button" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-x"></i></button>
+
+        
+      </div>
+      <div class="modal-body m-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
+         
+          <div class="col bg-danger-subtle rounded-2 align-items-center">
+            <div id="ai-description" class="container pt-4">      
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div id="modal-image" class="container-fluid p-3 position-relative">
+                
+              </div>
+              <div id="input-output" class="card-body">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </section>
+</main>
+    <script src="js/Bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/22bf447217.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
